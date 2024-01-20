@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contactstyle.css">
+    <link rel="shortcut icon" href="images/icons/html_5.svg"/>
+</head>
+<body onresize="bodyResized()">
+    <header>
+        <nav id="navbar">
+            <ul id="menu">
+                <li><a href="index.html">home</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="explore.html">explore</a></li>
+                <li><a href="#">contact</a></li>
+                <li><button>sign in</button></li>
+            </ul>
+            <div id="menuButton">
+                <button onclick="MenubuttonClick()"><img id="imageicon" src="images/hamburger.svg" alt=""></button>
+            </div>
+            <div id="menu2wrapper">
+                <ul id="menu2">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                    <li><a href="explore.html">explore</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><button>sign in</button></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Questions?<br>Contact!</h1>
+    </header>
+    <main>
+       <form action="#">
+           <input type="text" name="Name" placeholder="Name">
+           <br>
+           <input type="text" name="Email" placeholder="Email">
+           <br>
+           <input type="text" name="Subject" placeholder="Subject">
+           <br>
+           <textarea name="Message" rows="5" placeholder="Message"></textarea>
+           <br>
+           <input type="submit" value="Send">
+       </form>
+
+       <section>
+           <table>
+               <tr>
+                   <td><img src="images/icons/basic/mail.svg" alt=""></td>
+                   <td>Qwerty123@gmail.com</td>
+               </tr>
+               <tr>
+                    <td><img src="images/icons/basic/phone.svg" alt=""></td>
+                    <td>123-456-7890</td>
+                </tr>
+                <tr>
+                    <td><img src="images/icons/basic/location.svg" alt=""></td>
+                    <td>Perth, Western Australia</td>
+                </tr>
+           </table>
+
+           <h2>FAQ</h2>
+           <p><img src="images/icons/Dog.svg" alt="">Don't know if 1 + 1 is 2?</p>
+           <p>Yes indeed, 1 + 1 is 2</p>
+           <p><img src="images/icons/Dog.svg" alt="">Code not working?</p>
+           <p>You probably forgot these <code> { } ( ) ; , [ ] </code></p>
+           <p><img src="images/icons/Dog.svg" alt="">Dogecoin?</p>
+           <p>Yes, please!</p>
+           <p><img src="images/icons/Dog.svg" alt="">Wi-Fi not working?</p>
+           <p>Restart router.</p>
+           <h4><span>Help!</span> I can't find what I am looking for? Click <a href="index.html">here</a>.</h4>
+       </section>
+    </main>
+    <footer>
+        <section>
+            <aside>
+                <h3>Markup Language</h3>
+                <table>
+                    <tr>
+                        <td><img src="images/icons/html_5.svg" alt=""></td>
+                        <td>HTML5</td>
+                    </tr>
+                </table>
+                <h3>StyleSheet</h3>
+                <table>
+                    <tr>
+                        <td><img src="images/icons/css_3.svg" alt=""></td>
+                        <td>CSS3</td>
+                    </tr>
+                </table>
+                <h3>Programming language used</h3>
+                <table>
+                    <tr>
+                        <td><img src="images/icons/js.svg" alt=""></td>
+                        <td>JavaScript</td>
+                    </tr>
+                </table>
+                <h3>Editor tools used</h3>
+                <table>
+                    <tr>
+                        <td><img src="images/icons/vs_code.png" alt=""></td>
+                        <td>Visual Studio Code</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/icons/figma.svg" alt=""></td>
+                        <td>Figma</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/icons/adobe_photoshop.svg" alt=""></td>
+                        <td>Photoshop</td>
+                    </tr>
+                </table>
+                <h3>Follow us on</h3>
+                <table>
+                    <tr>
+                        <td><img src="images/icons/Facebook.svg" alt=""></td>
+                        <td>Facebook</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/icons/instagram.svg" alt=""></td>
+                        <td>instagram</td>
+                    </tr>
+                </table>
+            </aside>
+            <aside id="items">
+                <ul>
+                    <h2>Browse</h2>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                <ul>
+                    <h2>Title</h2>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                </ul>
+
+                <ul>
+                    <h2>Title</h2>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                    <li>Fourth</li>
+                    <li>Fifth</li>
+                </ul>
+            </aside>
+        </section>
+        <h3 id="copyright">@ Rajveer Singh 2021</h3>
+    </footer>
+    <script src="script/javascript.js"></script>
+</body>
+</html>

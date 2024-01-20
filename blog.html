@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blogstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="shortcut icon" href="images/icons/html_5.svg"/>
+</head>
+<body onresize="bodyResized()">
+    <header>
+        <nav id="navbar">
+            <ul id="menu">
+                <li><a href="index.html">home</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="explore.html">explore</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><button>sign in</button></li>
+            </ul>
+            <div id="menuButton">
+                <button onclick="MenubuttonClick()"><img id="imageicon" src="images/hamburger.svg" alt=""></button>
+            </div>
+            <div id="menu2wrapper">
+                <ul id="menu2">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="explore.html">explore</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><button>sign in</button></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Blog</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Heading 1</h2>
+            <div class="wrapper">
+                <img src="images/niagrafalls.jpeg" alt="">
+            </div>
+            <p>
+                In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Vivamus rutrum nunc non neque consectetur 
+                quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh. 
+                Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. In condimentum orci id nisl volutpat bibendum. Quis
+                que commodo hendrerit lorem quis egestas. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodale
+                s feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida 
+                congue sed sit amet purus. In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Vivamus rutrum nunc non 
+                neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien
+                 ut nibh. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. In condimentum orci id nisl volutpat 
+                 bibendum. Quisque commodo hendrerit lorem quis egestas. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestib
+                 ulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh. Aliquam erat volutpat. Mauris vel neque sit 
+                 amet nunc gravida congue sed sit amet purus.
+            </p>
+            
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <span>January 2019</span>
+                <article>
+                    <section>
+                        <h3>Venice, Italy</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur cupiditate modi architecto amet distinctio aperiam earum libero sapiente ut. Consequuntur illo nostrum placeat dolore, minus assumenda praesentium cum molestiae dignissimos.</p>
+                    </section>
+                    <img src="images/venice.jpeg" alt="">
+                </article>
+            </div>
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <span>October 2018</span>
+                <article>
+                    <section>
+                        <h3>Taj Mahal, India</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur cupiditate modi architecto amet distinctio aperiam earum libero sapiente ut. Consequuntur illo nostrum placeat dolore, minus assumenda praesentium cum molestiae dignissimos.</p>
+                    </section>
+                    <img src="images/tajimg.jpeg" alt="">
+                </article>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <section>
+            <aside>
+                <h3>Markup Language</h3>
+                <table>
+                    <tr>
+                        <td><img src="images/icons/html_5.svg" alt=""></td>
+                        <td>HTML5</td>
+                    </tr>
+                </table>
+                <h3>StyleSheet</h3>
+                <table>
+                    <tr>
+                        <td><img src="images/icons/css_3.svg" alt=""></td>
+                        <td>CSS3</td>
+                    </tr>
+                </table>
+                <h3>Programming language used</h3>
+                <table>
+                    <tr>
+                        <td><img src="images/icons/js.svg" alt=""></td>
+                        <td>JavaScript</td>
+                    </tr>
+                </table>
+                <h3>Editor tools used</h3>
+                <table>
+                    <tr>
+                        <td><img src="images/icons/vs_code.png" alt=""></td>
+                        <td>Visual Studio Code</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/icons/figma.svg" alt=""></td>
+                        <td>Figma</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/icons/adobe_photoshop.svg" alt=""></td>
+                        <td>Photoshop</td>
+                    </tr>
+                </table>
+                <h3>Follow us on</h3>
+                <table>
+                    <tr>
+                        <td><img src="images/icons/Facebook.svg" alt=""></td>
+                        <td>Facebook</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/icons/instagram.svg" alt=""></td>
+                        <td>instagram</td>
+                    </tr>
+                </table>
+            </aside>
+            <aside id="items">
+                <ul>
+                    <h2>Browse</h2>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <ul>
+                    <h2>Title</h2>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                </ul>
+
+                <ul>
+                    <h2>Title</h2>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                    <li>Fourth</li>
+                    <li>Fifth</li>
+                </ul>
+            </aside>
+        </section>
+        <h3 id="copyright">@ Rajveer Singh 2021</h3>
+    </footer>
+    <script src="script/javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,307 @@
+/*
+Header styling
+*/
+header{
+    height: fit-content;
+    background: url(../images/bgimg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 100px;
+    background-attachment: fixed;
+}
+
+header nav #menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 20px;
+    font-size: 24px;
+    text-transform: capitalize;
+    float: right;
+}
+
+header nav #menu li{
+    padding: 10px 20px;
+}
+
+header nav #menu li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav #menu li button{
+    font-size: 24px;
+    text-transform: capitalize;
+    padding: 0px 10px;
+    background-color: transparent;
+    border: 5px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+header nav #menu li button:hover{
+    color: #111;
+    background: #fff;
+}
+
+header nav #menuButton button{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    margin-top: 10px;
+    margin-right: 10px;
+    display: none;
+    color: black;
+    border: none;
+    height: 50px;
+    width: 50px;
+    background: #1D2B34;
+    opacity: .5;
+}
+
+header nav #menuButton button img{
+    height: inherit;
+    width: inherit;
+}
+
+header nav #menu2wrapper{
+    display: none;
+    background-color: #1D2B34;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    transition: .3s;
+}
+
+header nav #menu2wrapper #menu2{
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 20px;
+    font-size: 24px;
+    text-transform: capitalize;
+    transform: translateY(50%);
+}
+
+header nav #menu2wrapper #menu2 li{
+    padding: 10px 20px;
+}
+
+header nav #menu2wrapper #menu2 li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav #menu2wrapper #menu2 li button{
+    font-size: 24px;
+    text-transform: capitalize;
+    padding: 0px 10px;
+    background-color: transparent;
+    border: 5px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+header nav #menu2wrapper #menu2 li button:hover{
+    color: #111;
+    background: #fff;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0px auto;
+    padding-top: 10%;
+}
+
+header .container article{
+    width: 50%;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+header .container article h1{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 55px;
+}
+
+header .container article h2{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+header .container article h2 span{
+    color: red;
+}
+
+header .container article p{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+header .container .wrapper{
+    width: 50%;
+}
+
+header .container .wrapper img{
+    width: 100%;
+    height: 100%;
+    transition: .1s;
+}
+
+header .container .wrapper img:hover{
+    animation: rotateimg 10s infinite;
+}
+
+@keyframes rotateimg {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(15deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+/*
+Main styling
+*/
+
+section{
+    background: #fff;
+    padding: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #999;
+    height: fit-content;
+}
+
+section:nth-child(3){
+    border-bottom: none;
+}
+
+section .wrapper{
+    height: 400px;
+    width: 50%;
+    transition: .2s;
+}
+
+section .wrapper:hover{
+    transform: scale(1.0125);
+    box-shadow: 5px 5px 5px #999999;
+}
+
+section .wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section article{
+    width: 50%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+section article h1{
+    font-size: 36px;
+}
+
+section article p{
+    font-size: inherit;
+}
+
+/*
+Media Queries
+*/
+@media only screen and (max-width: 700px) {
+    header .container article, header .container .wrapper{
+        width: 100%;
+    }
+
+    header nav #menu{
+        display: none;
+    }
+    header nav #menuButton button{
+        display: block;
+    }
+
+    section .wrapper, section article{
+        width: 100%;
+    }
+
+    html{
+        font-size: 90%;
+    }
+
+    section .wrapper{
+        height: 70%;
+    }
+
+    main {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    header .container article, header .container .wrapper{
+        width: 100%;
+    }
+    header nav #menu2wrapper{
+        width: 100%;
+    }
+
+    section {
+        padding: 0;
+    }
+
+    footer section #items ul{
+        width: 100%;
+        margin: 0px;
+        padding: 1rem;
+    }
+
+    footer section aside{
+        padding-left: 30px;
+        width: 100%;
+    }
+
+    footer section #items{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    footer #copyright{
+        text-align: center;
+        padding: 0;
+        padding-bottom: 10px;
+    }
+
+    header nav #menuButton button img, header nav #menuButton button{
+        width: 30px;
+        height: 30px;
+    }
+    
+}
