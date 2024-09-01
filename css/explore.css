@@ -1,0 +1,194 @@
+header h1{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    color: #fff;
+    font-size: 55px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+header h1 span{
+    text-transform: capitalize;
+}
+
+/*
+Main styling
+*/
+main .sectionclass{
+    min-height: 50vh;
+    display: flex;
+    border-top: 1px solid black;
+}
+
+main .sectionclass:nth-child(1){
+    border: none;
+}
+
+main .sectionclass h3{
+    font-size: 30px;
+    width: 30%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .sectionclass:nth-child(1) h3{
+    background: url(../images/city.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+main .sectionclass:nth-child(2) h3{
+    background: url(../images/landmark.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+main .sectionclass:nth-child(3) h3{
+    background: url(../images/beach.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+main .sectionclass:nth-child(4) h3{
+    background: url(../images/mountain.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+main .sectionclass .wrap{
+    width: 70%;
+    min-height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: center;
+}
+
+main .sectionclass .wrap .wrapper .container{
+    height: 10rem;
+    width: 15rem;
+    border-radius: .25rem;
+    margin: 1rem 1rem 0rem 1rem; 
+    overflow: hidden;
+}
+
+
+main .sectionclass .wrap .wrapper .container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s;
+}
+
+main .sectionclass .wrapper .container:hover img{
+    transform: scale(1.05);
+}
+
+main .sectionclass .wrap .wrapper p{
+    text-align: center;
+}
+
+/*
+Media Queries
+*/
+@media only screen and (max-width: 700px) {
+    body{
+        width: 100%;
+    }
+    header .container article, header .container .wrapper{
+        width: 100%;
+    }
+
+    header nav #menu{
+        display: none;
+    }
+    header nav #menuButton button{
+        display: block;
+    }
+
+    header h1{
+        font-size: 40px;
+    }
+
+    main{
+        width: 100%;
+    }
+
+    form input, form textarea, form input[type="submit"]{ 
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    html{
+        font-size: 90%;
+    }
+
+    main .sectionclass{
+        margin: 0px auto;
+        width: 100%;
+        display: block;
+        border: none;
+    }
+
+    main .sectionclass h3, main .sectionclass .wrap{
+        width: 100%;
+        
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    header .container article, header .container .wrapper{
+        width: 100%;
+    }
+
+    header nav #menu2wrapper{
+        width: 100%;
+    }
+
+    header h1{
+        font-size: 30px;
+    }
+
+    form input[type="submit"]{
+        width: 100%;
+    }
+
+    footer section #items ul{
+        width: 100%;
+        margin: 0px;
+        padding: 1rem;
+    }
+
+    footer section aside{
+        padding-left: 30px;
+        width: 100%;
+    }
+
+    footer section #items{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    footer #copyright{
+        text-align: center;
+        padding: 0;
+        padding-bottom: 10px;
+    }
+
+    header nav #menuButton button img, header nav #menuButton button{
+        width: 30px;
+        height: 30px;
+    }
+    
+}

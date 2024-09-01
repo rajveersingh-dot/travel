@@ -1,0 +1,213 @@
+/*
+Fonts
+*/
+@font-face {
+    font-family: 'Reem Kufi';
+    src: url(../fonts/Reem_Kufi/ReemKufi-VariableFont_wght.ttf);
+}
+
+/*
+Universal styling
+*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+/*
+Body styling
+*/
+body{
+    margin: 0px auto;
+    background-color: #fff;
+    height: fit-content;
+}
+
+
+/*
+Header styling
+*/
+header{
+    height: fit-content;
+    background: #1D2B34;
+}
+
+header nav #menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 20px;
+    font-size: 24px;
+    text-transform: capitalize;
+    float: right;
+}
+
+header nav #menu li{
+    padding: 10px 20px;
+}
+
+header nav #menu li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav #menu li button{
+    font-size: 24px;
+    text-transform: capitalize;
+    padding: 0px 10px;
+    background-color: transparent;
+    border: 5px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+header nav #menu li button:hover{
+    color: #111;
+    background: #fff;
+}
+
+header nav #menuButton button{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    margin-top: 10px;
+    margin-right: 10px;
+    display: none;
+    color: black;
+    border: none;
+    height: 50px;
+    width: 50px;
+    background: #1D2B34;
+    opacity: .5;
+}
+
+header nav #menuButton button img{
+    height: inherit;
+    width: inherit;
+}
+
+header nav #menu2wrapper{
+    display: none;
+    background-color: #1D2B34;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    transition: .3s;
+}
+
+header nav #menu2wrapper #menu2{
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 20px;
+    font-size: 24px;
+    text-transform: capitalize;
+    transform: translateY(50%);
+}
+
+header nav #menu2wrapper #menu2 li{
+    padding: 10px 20px;
+}
+
+header nav #menu2wrapper #menu2 li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav #menu2wrapper #menu2 li button{
+    font-size: 24px;
+    text-transform: capitalize;
+    padding: 0px 10px;
+    background-color: transparent;
+    border: 5px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+header nav #menu2wrapper #menu2 li button:hover{
+    color: #111;
+    background: #fff;
+}
+
+header h1{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    color: #fff;
+    font-size: 55px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+/*
+Footer styling
+*/
+footer{
+    background: #1D2B34;
+    color: #fff;
+}
+
+footer section{
+    background: inherit;
+    color: inherit;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+footer section aside{
+    width: 50%;
+}
+
+footer section aside .subsection{
+    display: block;
+}
+
+footer section aside h3{
+    margin-top: 20px;
+}
+
+footer section #items{
+    display: flex;
+    text-align: center;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+footer section #items ul{
+    padding: 50px;
+}
+
+footer section #items ul li{
+    list-style: none;
+    margin: 20px 0px;
+}
+
+footer section #items ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+footer #copyright{
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
